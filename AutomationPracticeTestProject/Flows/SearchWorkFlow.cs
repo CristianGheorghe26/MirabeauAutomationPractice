@@ -1,5 +1,4 @@
-﻿using AutomationPracticeTestProject.Flows;
-using AutomationPracticeTestProject.Infrastructure.Pages;
+﻿using AutomationPracticeTestProject.Infrastructure.Pages;
 using OpenQA.Selenium;
 
 namespace AutomationPracticeTestProject.Flows
@@ -16,7 +15,7 @@ namespace AutomationPracticeTestProject.Flows
         }
         public SearchPage Continue()
         {
-            _searchPage.Continue();
+            _searchPage.Continue(); 
             return _searchPage;
         }
     }

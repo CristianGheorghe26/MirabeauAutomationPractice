@@ -78,6 +78,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AutomationPractice\SearchPageTest.cs" />
+    <Compile Include="AutomationPractice\SearchResultsPageTest.cs" />
     <Compile Include="Flows\ContinueToSearchResultsPageWorkFlow.cs" />
     <Compile Include="Flows\IWorkFlow.cs" />
     <Compile Include="Flows\SearchResultsWorkFlow.cs" />

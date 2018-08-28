@@ -1,6 +1,4 @@
-﻿using System.Threading;
-using AutomationPracticeTestProject.Infrastructure.Pages;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AutomationPracticeTestProject.Infrastructure.Pages
 {
@@ -13,9 +11,6 @@ namespace AutomationPracticeTestProject.Infrastructure.Pages
         }
         public IWebElement SearchQuery => driver.FindElement(By.XPath("//*[@id='search_query_top']"));
         public IWebElement SearchButton => driver.FindElement(By.XPath("//*[@id='searchbox']/button"));
-        //public void Go()
-        //{
-        //}
         public SearchResultsPage Continue()
         {
             Click(SearchButton);

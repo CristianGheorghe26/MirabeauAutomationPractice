@@ -1,8 +1,5 @@
-﻿using AutomationPracticeTestProject.Flows;
-using AutomationPracticeTestProject.Infrastructure.Pages;
+﻿using AutomationPracticeTestProject.Infrastructure.Pages;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
-using System;
 
 namespace AutomationPracticeTestProject.Flows
 {
@@ -18,10 +15,8 @@ namespace AutomationPracticeTestProject.Flows
         }
         private void FillSearchData()
         {
-            _searchPage.driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
             _searchPage.SearchQuery.SendKeys("dresses");
         }
-
         public SearchResultsPage Continue()
         {
             FillSearchData();

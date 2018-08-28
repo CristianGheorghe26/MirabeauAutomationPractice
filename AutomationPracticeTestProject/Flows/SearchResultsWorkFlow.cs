@@ -1,5 +1,4 @@
-﻿using AutomationPracticeTestProject.Flows;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AutomationPracticeTestProject.Flows
 {

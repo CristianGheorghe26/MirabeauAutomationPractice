@@ -13,10 +13,5 @@ namespace AutomationPracticeTestProject.Flows
             webDriver.Manage().Window.Maximize();
             webDriver.Navigate().GoToUrl("http://automationpractice.com");
         }
-        public SearchPage Continue()
-        {
-            _searchPage.Continue(); 
-            return _searchPage;
-        }
     }
 }

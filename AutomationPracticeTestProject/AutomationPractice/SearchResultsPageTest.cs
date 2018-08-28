@@ -10,7 +10,7 @@ namespace AutomationPracticeTestProject.AutomationPractice
         [TestMethod]
         public void SearchResultsPage()
         {
-            _sut.Continue().IsActive("automationpractice.com/index.php?controller=search&orderby=position&orderway=desc&search_query=dresses&submit_search=").Should().BeTrue("Cannot reach search results page.");
+            _sut.Continue().AreProductsAvailable().Should().BeTrue("No products are available");
         }
     }
 }

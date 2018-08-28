@@ -1,4 +1,5 @@
 ﻿using AutomationPracticeTestProject.Flows;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
@@ -15,8 +16,10 @@ namespace AutomationPracticeTestProject
             sut.Initialize(webDriver);
             return sut;
         }
-        public TestBase()
+        [TestCleanup()]
+        public void Cleanup()
         {
+            webDriver.Quit();
         }
     }
 }

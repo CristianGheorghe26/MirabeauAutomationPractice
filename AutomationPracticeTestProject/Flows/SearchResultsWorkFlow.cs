@@ -4,7 +4,6 @@ namespace AutomationPracticeTestProject.Flows
 {
     public class SearchResultsWorkFlow : IWorkFlow
     {
-        private SearchResultsWorkFlow _searchresultsPage;
         private ContinueToSearchResultsPageWorkFlow _continueToSearchResultsPageWorkFlow;
         public void Initialize(IWebDriver webDriver)
         {

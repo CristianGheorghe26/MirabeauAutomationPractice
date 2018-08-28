@@ -4,7 +4,6 @@ namespace AutomationPracticeTestProject.Infrastructure.Pages
 {
     public class SearchPage : PageElements
     {
-        private string Url;
         public SearchPage(IWebDriver webDriver)
         {
             driver = webDriver;

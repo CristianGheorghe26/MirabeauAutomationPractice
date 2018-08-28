@@ -1,5 +1,4 @@
-﻿using System;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 
 namespace AutomationPracticeTestProject.Infrastructure.Pages
 {
@@ -9,10 +8,6 @@ namespace AutomationPracticeTestProject.Infrastructure.Pages
         {
             driver = webDriver;
         }
-        public IWebElement SearchResultsPresent => driver.FindElement(By.XPath("//*[@id='center_column']/h1/span[2]"));
-
-        public object SearchQuery { get; internal set; }
-
         public bool AreProductsAvailable()
         {
             try
@@ -24,10 +19,6 @@ namespace AutomationPracticeTestProject.Infrastructure.Pages
             {
                 return false;
             }
-        }
-        internal SearchResultsPage Continue()
-        {
-            throw new NotImplementedException();
         }
     }
 }
